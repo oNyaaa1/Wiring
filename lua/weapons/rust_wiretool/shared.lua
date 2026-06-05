@@ -1,0 +1,11 @@
+SWEP.Base = "weapon_base"
+SWEP.PrintName = "Rust Wire Tool"
+SWEP.Category = "Rust"
+SWEP.Spawnable = true
+SWEP.AdminSpawnable = false
+SWEP.WorldModel = ""
+SWEP.ViewModel = ""
+SWEP.Slot = 4
+SWEP.SlotPos = 1
+SWEP.DrawAmmo = false
+SWEP.DrawCrosshair = false

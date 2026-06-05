@@ -1,11 +1,9 @@
 include("shared.lua")
-
 function ENT:Initialize()
 end
 
 function ENT:Draw()
     self:DrawModel()
-end
-
-function ENT:Think()
+    //surface.SetDrawColor(255, 255, 255, 128)
+    //surface.DrawOutlinedRect(25, 25, 100, 100, 10)
 end

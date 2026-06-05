@@ -8,6 +8,10 @@ function ENT:Initialize()
     self:SetSolid(SOLID_VPHYSICS)
     local phys = self:GetPhysicsObject()
     if IsValid(phys) then phys:Wake() end
+    self.Wiring = true
+    self.Name = "rust_turret"
+    local obbmin = self:OBBMins()
+    IO.Wiring.Inputs(self, self:GetPos() + Vector(0, obbmin.y + 12, obbmin.z + 27), "rust_turret")
 end
 
 function ENT:Touch(ent)
@@ -40,7 +44,6 @@ function ENT:Touch(ent)
         self.GunPos:Spawn()
         self.GunPos:Activate()
         self.GunPos:SetParent(self.Pitch)
-        
         self.NotHasGun = turret
         ent:Remove()
     end
@@ -66,9 +69,9 @@ function ENT:Target()
 end
 
 function ENT:Think()
-    if self.Pitch and self.Yaw then
+    if self.Pitch and self.Yaw and self.GunPos then
         self.Pitch:SetAngles(self:Target():GetAngles())
         self.Yaw:SetAngles(self:Target():GetAngles())
-        self.GunPos:SetAngles(self.Pitch:GetAngles() + Angle(0,180,0))
+        self.GunPos:SetAngles(self.Pitch:GetAngles() + Angle(0, 180, 0))
     end
 end

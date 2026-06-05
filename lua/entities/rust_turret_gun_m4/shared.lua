@@ -1,6 +1,6 @@
 ENT.Type = "anim"
 ENT.Base = "base_gmodentity"
-ENT.PrintName = "Turret Head"
+ENT.PrintName = "Turret Gun"
 ENT.Category = "Rust"
 ENT.Author = ""
 ENT.Spawnable = true
