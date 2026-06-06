@@ -11,7 +11,6 @@ end
 
 function ENT:Draw()
     self:DrawModel()
-    self:DrawModel(flags)
     local text = "Input"
     local mins, maxs = self:GetModelBounds()
     local pos = self:GetPos() + Vector(0, 0, maxs.z + 2)
