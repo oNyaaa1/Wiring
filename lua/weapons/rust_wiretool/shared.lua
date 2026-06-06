@@ -8,7 +8,7 @@ SWEP.ViewModel     = ""
 SWEP.Slot          = 4
 SWEP.SlotPos       = 1
 SWEP.DrawAmmo      = false
-SWEP.DrawCrosshair = false
+SWEP.DrawCrosshair = true
 
 -- Global cable table always exists, not only after weapon spawn
 WiringCable = WiringCable or {}

@@ -1,4 +1,4 @@
-local beamMat = Material("cable/rope")
+local beamMat = Material("phoenix_storms/stripes")
 
 -- Table of active connections: { {outNode, inNode}, ... }
 WiringConnections = WiringConnections or {}

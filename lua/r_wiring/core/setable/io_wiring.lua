@@ -45,6 +45,7 @@ IO.Wiring = {
             net.WriteEntity(inNode)
         net.Broadcast()
 
+        toEnt.HasConnected = true
         print("[R-Wiring] Connected " .. tostring(fromEnt) .. " -> " .. tostring(toEnt))
         return true
     end,
