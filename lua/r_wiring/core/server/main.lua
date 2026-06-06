@@ -1,1 +1,1 @@
-print("[R-Wiring Test Loaded]")
+print("[R-Wiring] Server loaded.")
