@@ -1,6 +1,6 @@
 # Wiring
 
-*** Required files: 
+** Required files: 
 * Server Command line:
 ** +host_workshop_collection 3648406739
 * or 
