@@ -15,7 +15,7 @@ function ENT:Initialize()
         if not IsValid(self) then return end
         local obbmin = self:OBBMins()
         --IO.Wiring.Inputs(self, self:GetPos() + Vector(40, 3, obbmin.z + 2), "rust_solarpanel")
-        IO.Wiring.Output(self, self:GetPos() + Vector(-40, 3, obbmin.z + 2), "rust_solarpanel")
+        IO.Wiring.Output(self, self:GetPos() + Vector(-45, 3, obbmin.z + 2), "rust_solarpanel")
     end)
 
     self.CoolDown = 0

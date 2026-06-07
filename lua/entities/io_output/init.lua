@@ -1,7 +1,6 @@
 AddCSLuaFile("cl_init.lua")
 AddCSLuaFile("shared.lua")
 include("shared.lua")
-
 function ENT:Initialize()
     self:SetModel("models/hunter/plates/plate.mdl")
     self:PhysicsInit(SOLID_VPHYSICS)
@@ -17,8 +16,8 @@ function ENT:OnRemove()
     if IsValid(self.ConnectedTo) then
         self.ConnectedTo.ConnectedFrom = nil
         net.Start("RWiring_RemoveConnection")
-            net.WriteEntity(self)
-            net.WriteEntity(self.ConnectedTo)
+        net.WriteEntity(self)
+        net.WriteEntity(self.ConnectedTo)
         net.Broadcast()
     end
 end
